@@ -32,13 +32,6 @@ public class RandomJokesApplication {
 			in.close();
 			JSONObject masterData = new JSONObject(jsonResponseData.toString());
 			System.out.println(masterData);
-//            System.out.println("Current elevation " + masterData.get("elevation"));
-//            System.out.println("Current generationtime_ms " + masterData.get("generationtime_ms"));
-
-//            JSONObject currentWeatherObj = (JSONObject) masterData.get("current_weather");
-//
-//            System.out.println("Current temperature " + currentWeatherObj.get("temperature"));
-//            System.out.println("Current windspeed " + currentWeatherObj.get("windspeed"));
 		} else {
 			System.out.println("This is not valid URL- " + responseCode);
 		}
